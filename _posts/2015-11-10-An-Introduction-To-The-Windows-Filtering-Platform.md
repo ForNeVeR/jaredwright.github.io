@@ -1,4 +1,8 @@
-# The Windows Filtering Platform: A Reasonable Introduction
+
+<html>
+<title> An Introduction The Windows Filtering Platform </title>
+
+<xmp theme="spacelab" style="display:none;">
 
 Lately, I've been spending a significant portion of my time interacting with the low-level networking capabilities of Microsoft Windows. Starting with Windows Vista, Microsoft released a framework called the Windows Filtering Platform (WFP for short). It's the core foundation on which the Windows Firewall With Advanced (*haha*) Security is implemented. If you've ever had the unique pleasure of working with a Window's kernel-level API before, chances are you have experienced the overwhelming amount of dedication required to even get 'hello world' working. Navigating the absurd amount of inaccurate, misleading, outdated, incomplete (or whatever you want to call it...) information out there is **hard**.
 
@@ -103,7 +107,7 @@ There are many other layers of the Windows Filtering Platform: layers that inspe
 
 ## An  Example
 
-To help get you started with the Windows Filtering Platform, I posted source code for a sample driver on [github](github.com/JaredWright/WFPStarterKit) to accompany this article. This example demonstrates how to register a single Callout, Sublayer, and Filter to the Base Filtering Engine. To keep this example as simple as possible, the Callout just prints some information (output visible in [DbgView](https://technet.microsoft.com/en-us/sysinternals/debugview.aspx)) about outbound TCP packets, and blocks any packets bound for the remote port 1234. I plan to expand upon this example in another post to demonstrate the common "block/cone/re-inject" pattern used for more advanced features. Keep your eyes peeled for updates!
+To help get you started with the Windows Filtering Platform, I posted source code for a sample driver on [github](http://github.com/JaredWright/WFPStarterKit) to accompany this article. This example demonstrates how to register a single Callout, Sublayer, and Filter to the Base Filtering Engine. To keep this example as simple as possible, the Callout just prints some information (output visible in [DbgView](https://technet.microsoft.com/en-us/sysinternals/debugview.aspx)) about outbound TCP packets, and blocks any packets bound for the remote port 1234. I plan to expand upon this example in another post to demonstrate the common "block/cone/re-inject" pattern used for more advanced features. Keep your eyes peeled for updates!
 
 ### Setting Up Your Environment
 For this project, I used Visual Studio 2013 and the WDK version 8.1. You will need to download both from Microsoft's web site to build this example (both are free). I used the project template under New Project->Templates->Visual C++->Windows Driver->WDF->Kernel Mode Driver, Empty (KMDF) to get started. Make sure to set your target platform and configuration appropriately (I used the pre-configured Win7 Debug, x64 configuration). If building the driver for a 64-bit Windows version, make sure you disable driver signature enforcement before you boot Windows. For help loading/unloading drivers on Windows, use the [OSR Driver Loader](www.osronline.com/article.cfm?article=157).
@@ -131,3 +135,8 @@ Finally, here is a list of resources I found useful when learning about the Wind
 
 ## Conclusion
 I hope this article has helped to demystify some of the complexities behind the Windows Filtering Platform. You should now have the background knowledge necessary to tackle the implementation of your own kernel-level networking tools for Windows. If I have succeeded, hopefully I have spared you many headaches during your ramp-up time with this tool. If I have caused you more headaches, please leave me a comment. Thank you for reading, and happy hacking!
+
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</html>
