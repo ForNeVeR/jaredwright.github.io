@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Simplicy and Security is a blog dedicated to ideas, tools and technology that promote security through simplicity. Given that "simple" does not always mean "easy", this blog aims to transform complex ideas into easliy understandable pieces.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+The author Jared Wright is a software engineer/researcher at Assured Information Security, Inc. His interests include low-level systems development, device drivers, and operating systems. When he is not twiddling bits around the office, you'll likely find him sport climbing along the front range of Colorado. Follow me @JInternetThings and jinternetthings@gmail.com
